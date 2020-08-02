@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <title>Lang Recognition</title>
+</head>
+
+<body>
+		<h1>Language Recognition</h1> <br><br>
+		<p>Welcome to our website! We are happy to help you. Please upload or record a file so that we can detect the language.</p>
+		<input type="file" accept="audio/*" capture id="recorder">
+<audio id="player" controls></audio>
+<script>
+  const recorder = document.getElementById('recorder');
+  const player = document.getElementById('player');
+
+  recorder.addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    const url = URL.createObjectURL(file);
+    // Do something with the audio file.
+    player.src = url
+  });
+
+</script>
+<br><br>
+<p>If you don't have the file kindly navigate to /record</p>
+</body>
+
+</html>

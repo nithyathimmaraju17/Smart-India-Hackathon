@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 30 20:22:26 2020
-
-@author: krishna
-"""
-
-
 
 import torch
 import numpy as np

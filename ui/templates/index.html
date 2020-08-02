@@ -4,11 +4,17 @@
 <head>
      <title>Lang Recognition</title>
 </head>
+<style type="text/css">
+	.scr{
+		text-align: center;
+	}
+</style>
 
-<body>
-		<h1>Language Recognition</h1> <br><br>
-		<p>Welcome to our website! We are happy to help you. Please upload or record a file so that we can detect the language.</p>
-		<input type="file" accept="audio/*" capture id="recorder">
+<body style="background-color: #35c4f3">
+		<h1 style="text-align: center">Language Recognition</h1> <br><br>
+		<p style="text-align: center">Welcome to our website! We are happy to help you. Please upload or record a file so that we can detect the language.</p><br><br>
+<div align="center">
+<input type="file" accept="audio/*" capture id="recorder">
 <audio id="player" controls></audio>
 <script>
   const recorder = document.getElementById('recorder');
@@ -17,13 +23,12 @@
   recorder.addEventListener('change', function(e) {
     const file = e.target.files[0];
     const url = URL.createObjectURL(file);
-    // Do something with the audio file.
-    player.src = url
+    player.src = url;
   });
-
 </script>
+</div>
 <br><br>
-<p>If you don't have the file kindly navigate to /record</p>
+<p style="text-align: center">If you don't have the file kindly navigate to /record</p>
 </body>
 
 </html>

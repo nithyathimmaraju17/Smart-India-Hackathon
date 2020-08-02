@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 20 14:09:31 2019
-
-@author: Krishna
-"""
 import numpy as np
 import torch
 from utils import utils

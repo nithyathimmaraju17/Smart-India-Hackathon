@@ -1,9 +1,9 @@
-# Third Party
+
 import librosa
 import numpy as np
 import random
 # ===============================================
-#       code from Arsha for loading data.
+#      
 # This code extract features for a give audio file
 # ===============================================
 def load_wav(audio_filepath, sr, min_dur_sec=4):
